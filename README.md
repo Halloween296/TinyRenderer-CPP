@@ -7,7 +7,7 @@ A 3D Software Rasterizer built from scratch in C++（3D 软光栅/模拟 GPU /C+
 
 ![triRenderbefore](https://github.com/user-attachments/assets/2d256678-6eaf-49f7-a66b-2dbebe3961e5)
 
-后期处理（bloom/0.6，aces，饱和度Lerp(Vec3(gray, gray, gray), avgC, 1.2f)）：
+后期处理（Bloom 泛光 (阈值 0.6) + ACES 色调映射 + 饱和度增强 (基于亮度插值)）：
 
 ![triRender](https://github.com/user-attachments/assets/84bc46c3-09db-41db-95d6-801aa8cf337e)
 
