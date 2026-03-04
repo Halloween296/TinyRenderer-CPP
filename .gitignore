@@ -1,0 +1,17 @@
+out/
+build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+*.exe
+*.pdb
+*.obj
+*.o
