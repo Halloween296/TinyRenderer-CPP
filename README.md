@@ -10,15 +10,25 @@ A 3D Software Rasterizer built from scratch in C++（3D 软光栅/模拟 GPU /C+
 
 
 技术栈：
+
 此渲染器运行在cpu上，覆盖了从几何处理到像素输出的完整周期
+
 1、Maths.hpp：实现struct Vec2/3/4/Mat4 和常见图形学运算，支持基于行主序的矩阵乘法和齐次坐标变换
+
 2、实现 Local -> World -> View (LookAt) -> Clip (Perspective) -> NDC -> Screen 的 5 大空间坐标变换
+
 3、Mesh.hpp and Texture.hpp : 简单的obj格式解析和支持纹理
+
 4、zbuffer非线性深度缓冲解决遮挡问题，背面剔除优化通过叉乘判断n朝向<0则剔除减少ps阶段计算量
+
 5、集成stb_image支持漫反射贴图采样和UV Warp\Repeat
+
 6、通过叉乘计算三角形面法线dot实现半兰伯特光照
+
 7、SSAA 两倍分辨率超采样后卷积暴力消除锯齿
+
 8、bloom基于亮度阈值提取高光部分与多次模糊（横纵）混合--SRP自定义管线改用金字塔方法减少drawcall
+
 9、ACES色调映射防止亮部失真，bloom过亮问题通过GetHDR的返回值的bloom项乘以0.5降低
 
 
