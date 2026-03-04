@@ -3,10 +3,12 @@ A 3D Software Rasterizer built from scratch in C++（3D 软光栅/模拟 GPU /C+
 
 不依赖图形api用c++从零实现的软光栅，项目实现了完整的3D渲染管线以及带后处理系统，呈现数码柔光效果
 
-无后期处理
+无后期处理：
+
 ![triRenderbefore](https://github.com/user-attachments/assets/2d256678-6eaf-49f7-a66b-2dbebe3961e5)
 
-后期处理（bloom/0.6，aces，饱和度Lerp(Vec3(gray, gray, gray), avgC, 1.2f)）
+后期处理（bloom/0.6，aces，饱和度Lerp(Vec3(gray, gray, gray), avgC, 1.2f)）：
+
 ![triRender](https://github.com/user-attachments/assets/84bc46c3-09db-41db-95d6-801aa8cf337e)
 
 
